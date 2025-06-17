@@ -10,7 +10,8 @@ import {
 } from 'react-router-dom';
 
 import { Layout } from '../components';
-import { Courses, Dashboard } from '../pages';
+import { FirstPage, SecondPage } from '../pages';
+import { ICON_SIZE_24 } from '@utils/iconSizes';
 
 export interface IRoute {
   element: ReactNode;
@@ -20,7 +21,7 @@ export interface IRoute {
   label?: string;
   path: string;
 }
-// TODO fazer internacionalização das rotas
+
 export const routes: Array<IRoute> = [
   {
     element: <Navigate to='/' />,
@@ -28,17 +29,17 @@ export const routes: Array<IRoute> = [
     internalRoutes: [],
   },
   {
-    element: <Dashboard />,
-    icon: <TfiDashboard size={24} style={{ marginBlock: 10 }} />,
-    label: 'Dashboard',
+    element: <FirstPage />,
+    icon: <TfiDashboard size={ICON_SIZE_24} style={{ marginBlock: 10 }} />,
+    label: 'FirstPage',
     path: '/',
     internalRoutes: [],
   },
   {
-    element: <Courses />,
-    icon: <PiBooksLight size={24} style={{ marginBlock: 10 }} />,
-    label: 'Cursos',
-    path: '/courses',
+    element: <SecondPage />,
+    icon: <PiBooksLight size={ICON_SIZE_24} style={{ marginBlock: 10 }} />,
+    label: 'SecondPage',
+    path: '/second-page',
     internalRoutes: [],
   },
 ];

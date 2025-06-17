@@ -5,7 +5,7 @@ import { IRoute } from '../../../../../AppRoutes/AppRoutes';
 
 const stylesheet = {
   listItem:
-    'flex items-center gap-2 items m-1 pl-2 rounded-md hover:bg-opacity-20 hover:bg-white',
+    'flex items-center gap-2 items m-1 pl-2 rounded-md hover:bg-primary-700/15 cursor-pointer',
 };
 
 export const SideBarListItem = ({ route }: { route: IRoute }) => {
@@ -13,7 +13,9 @@ export const SideBarListItem = ({ route }: { route: IRoute }) => {
   const { path, icon, label } = route;
 
   const handleItemColorSelected = () => {
-    return location.pathname === path ? 'bg-opacity-20 bg-green-500' : '';
+    return location.pathname === path
+      ? 'bg-primary-500/40 text-white hover:text-gray-500'
+      : '';
   };
 
   return (

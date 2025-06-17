@@ -7,18 +7,17 @@ import Logo from '@assets/mockLogo.svg';
 const stylesheet = {
   routeList: {
     container: 'flex-col',
-    sideCategory: 'py-[16px] text-xs opacity-80 font-normal',
     header: 'items-center justify-between',
   },
   sidebar: {
     headerContent: 'items-center',
     routesContent: 'flex-col gap-2',
     container:
-      'min-w-[254px] h-screen bg-white justify-between py-[32px] pl-[32px] pr-[20px] flex-col grow z-30 text-gray-dark',
+      'min-w-[254px] h-screen bg-white justify-between py-[32px] pl-[32px] pr-[20px] flex-col grow z-30 text-gray-700',
     list: 'flex flex-col justify-start font-medium text-gray-500',
     topics: 'text-white text-xs font-medium leading-snug tracking-wide my-4',
     signOut:
-      'flex items-center gap-2 items m-2 pl-2 rounded-md hover:bg-opacity-20 hover:bg-white cursor-pointer',
+      'flex items-center gap-2 items m-2 pl-2 rounded-md hover:bg-primary-500/15 cursor-pointer',
   },
 };
 
