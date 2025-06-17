@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Types */
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "types": ["react", "node"],
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@auth/*": ["./src/auth/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@store/*": ["./src/+store/*"],
+      "@auth-store/*": ["./src/auth/+store/*"],
+      "@logged-store/*": ["./src/logged/+store/*"]
+    }
+  },
+  "include": ["@types", "cypress", "src", "vite", "vite.config.ts", "vitest.config.ts", "tailwind.config.ts"],
+  "exclude": ["node_modules", "dist", "coverage", "junit.xml"],
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
+}
