@@ -14,7 +14,7 @@ const stylesheet = {
     headerContent: 'items-center',
     routesContent: 'flex-col gap-2',
     container:
-      'min-w-[254px] h-screen bg-white justify-between py-[32px] pl-[32px] pr-[20px] flex-col flex-grow z-30 text-gray-dark',
+      'min-w-[254px] h-screen bg-white justify-between py-[32px] pl-[32px] pr-[20px] flex-col grow z-30 text-gray-dark',
     list: 'flex flex-col justify-start font-medium text-gray-500',
     topics: 'text-white text-xs font-medium leading-snug tracking-wide my-4',
     signOut:
